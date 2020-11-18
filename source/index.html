@@ -1,12 +1,239 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Погнали</title>
-  </head>
-  <body>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS, уровень 2</a>».</p>
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Погнали</title>
+</head>
 
-  </body>
+<body class="page__body">
+  <header class="page__header">
+    <h1 class="header__title">Погнали?</h1>
+    <img class="header__image" src="">
+    <nav class="header__nav">
+      <div class="header__dropdown-wrap">
+        <ul class="header__nav-list">
+          <li class="header__nav-item">
+            <a class="header__nav-link">О СЕРВИСЕ</a>
+          </li>
+          <li class="header__nav-item">
+            <a class="header__nav-link" href="form.html">НАПРАВЛЕНИЯ</a>
+          </li>
+          <li class="header__nav-item">
+            <a class="header__nav-link" href="catalog.html">ПОПУТЧИКИ</a>
+          </li>
+        </ul>
+        <a class="button__login-button header-dropdown__login">АВТОРИЗАЦИЯ</a>
+        <a class="button__phone header-dropdown__phone" href="tel:+78005558628">8 800 555-86-28</a>
+        <a class="button__mail header-dropdown__mail" href="mailto:mail@htmlacademy.ru">MAIL@HTMLACADEMY.RU</a>
+        <a class="button__facebook header-dropdown__facebook" href="fb.com" aria-label="facebook"></a>
+        <a class="button__vkontakte header-dropdown__vkontakte" href="vk.com" aria-label="vkontakte">vkontakte</a>
+        <a class="button__instagram header-dropdown__instagram" href="instagram.com"
+          aria-label="instagram">instagram</a>
+      </div>
+      <span class="header__slogan">В путешествие с крутыми попутчиками!</span>
+      <a class="button__phone header__phone" href="tel:+78005558628">8 800 555-86-28</a>
+      <a class="button__mail header__mail" href="mailto:mail@htmlacademy.ru">MAIL@HTMLACADEMY.RU</a>
+      <a class="button__login-button header__login">АВТОРИЗАЦИЯ</a>
+    </nav>
+    <div class="header__quote-wrap">
+      <blockquote class="header__quote">&laquo;Лучшее приложение, что я видел в жизни!&raquo;</blockquote>
+      <p class="header__quote-author">Мурат Эльтазин</p>
+      <p class="header__quote-profession">главный редактор газеты &laquo;гаджетлайф&raquo;</p>
+    </div>
+    <div class="header__steps-first">
+      <span class="steps__text">выберите направление</span>
+      <span class="steps__count">1</span>
+      <div class="header__steps-second">
+        <span class="steps__text">Изучите идеи путешественников</span>
+        <span class="steps__count">2</span>
+        <div class="header__steps-third">
+          <span class="steps__text">Находите тех, кто похож на вас</span>
+          <span class="steps__count">3</span>
+          <div class="header__steps-fourth">
+            <span class="steps__text">Путешествуйте вместе!</span>
+            <span class="steps__count">4</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main class="page__main">
+    <section class="about">
+      <h2 class="about__title">О сервисе</h2>
+      <p class="about__text">Любое путешествие веселее с попутчиками, которые на одной волне с тобой! Делитесь своими
+        идеями путешествий и черпайте вдохновение в чужих.</p>
+      <p class="about__tagline">А если найдете кого-то близкого по духу - скорее зовите в совместный трип</p>
+    </section>
+    <section class="directions">
+      <h2 class="directions__title">Направления</h2>
+      <p class="directions__text">Мы не продаем туры и ничего не рекламируем. Люди сами пишут о странах, куда хотели бы
+        отправиться и чем можно там заняться.</p>
+      <ul class="directions__list">
+        <li class="directions__item">
+          <div class="directions__wrap">
+            <div class="directions__text-container">
+              <img class="directions__flag flags__thailand" src="" alt="">
+              <h3 class="directions__country">Таиланд</h3>
+              <p class="directions__country-slogan">Джунгли зовут!</p>
+              <span class="directions__visit-count">18321</span>
+            </div>
+          </div>
+        </li>
+        <li class="directions__item">
+          <div class="directions__wrap">
+            <div class="directions__text-container">
+              <img class="directions__flag flags__france" src="" alt="">
+              <h3 class="directions__country">Франция</h3>
+              <p class="directions__country-slogan">Трэ бьен, мнифик!</p>
+              <span class="directions__visit-count">12518</span>
+            </div>
+          </div>
+        </li>
+        <li class="directions__item">
+          <div class="directions__wrap">
+            <div class="directions__text-container">
+              <img class="directions__flag flags__czech" src="" alt="">
+              <h3 class="directions__country">Чехия</h3>
+              <p class="directions__country-slogan">Закоулки старой Европы</p>
+              <span class="directions__visit-count">5326</span>
+            </div>
+          </div>
+        </li>
+      </ul>
+      <button type="button__show directions_button-show" aria-label="Показать все страны">Покаазать всех</button>
+    </section>
+    <section class="travelers">
+      <h2 class="travelers__title">Попутчики</h2>
+      <p class="travelers__text">Все мы индивидуальны и у каждого свой взгляд на идеальный отдых. Одному нужен пляж и
+        коктейль, а другому маршрут для хайкинга</p>
+      <p class="travelers__tagline">Теперь можно легко найти единомышленников</p>
+      <ul class="travelers__list">
+        <li class="travelers_item">
+          <div class="travelers__item-wrap">
+            <!-- box-shadow -->
+            <div class="travelers_level">99 level</div>
+            <ul class="travelers__flag-list">
+              <li class="travelers__flag-item">
+                <img class="travelers__flag flags__sri-lanka" src="" alt=""> <!-- flex -->
+              </li>
+              <li class="travelers__flag-item">
+                <img class="travelers__flag flags__thailand" src="" alt="">
+              </li>
+              <li class="travelers__flag-item">
+                <img class="travelers__flag flags_seychelles" src="" alt="">
+              </li>
+            </ul>
+            <div class="travelers__status"></div>
+            <h3 class="travelers__name">Таня Фирсова</h3>
+            <span class="travelers__hashtags">#ЗОЖ #ПП #Фитнес #пляж #авокадо #смузи</span>
+            <div class="travelers__transport">
+              <img class="travelers__plane--active" src="" alt="">
+              <img class="travelers__bus" src="" alt="">
+              <img class="travelers__bike" src="" alt="">
+              <img class="travelers__track" src="" alt="">
+            </div>
+          </div>
+        </li>
+        <li class="travelers_item">
+          <div class="travelers__item-wrap">
+            <div class="travelers_level">80 level</div>
+            <ul class="travelers__flag-list">
+              <li class="travelers__flag-item">
+                <img class="travelers__flag flags__belgium" src="" alt=""> <!-- flex -->
+              </li>
+              <li class="travelers__flag-item">
+                <img class="travelers__flag flags__czech" src="" alt="">
+              </li>
+            </ul>
+            <div class="travelers__status--online"></div>
+            <h3 class="travelers__name">Петя Демин</h3>
+            <span class="travelers__hashtags">#бургер #бар #футбол #концерт #крафт</span>
+            <div class="travelers__transport">
+              <img class="travelers__plane--active" src="" alt="">
+              <img class="travelers__bus--active" src="" alt="">
+              <img class="travelers__bike" src="" alt="">
+              <img class="travelers__track--active" src="" alt="">
+            </div>
+          </div>
+        </li>
+        <button type="button__show travelers_button-show" aria-label="Показать всех попутчиков">Покаазать всех</button>
+      </ul>
+    </section>
+    <section class="profile">
+      <h2 class="profile__title">Добавьте свой профиль</h2>
+      <div class="profile__avatar-wrap"><img class="profile__avatar" src="" alt=""></div>
+      <ul class="profile__service-list">
+        <li class="profile__service-item">
+          <span class="profile__service-title">
+            Базовое размещение
+          </span>
+          <span class="profile__service-price">
+            Бесплатно
+          </span>
+          <div class="profile__service-count">
+            1
+          </div>
+        </li>
+        <li class="profile__service-item">
+          <span class="profile__service-title">
+            Вывод на первых позициях
+          </span>
+          <span class="profile__service-price">
+            99 руб./мес
+          </span>
+          <div class="profile__service-count">
+            2
+          </div>
+        </li>
+        <li class="profile__service-item">
+          <span class="profile__service-title">
+            Кастомный цвет карточки
+          </span>
+          <span class="profile__service-price">
+            59 руб./мес
+          </span>
+          <div class="profile__service-count">
+            3
+          </div>
+        </li>
+      </ul>
+      <a class="profile__service-business" href="">Показать тарифы для бизнеса</a>
+    </section>
+    <section class="registration">
+      <h2 class="registration__title">Заинтересовались?</h2>
+      <p class="registration__text">
+        Зарегистрируйтесь.
+        это быстро и бесплатно!
+        Уже зарегистрированы? Тогда скорее <a class="registration__authorization-button" href="">авторизируйтесь</a>.
+      </p>
+      <form class="registration__form" action="">
+        <label class="registration__form-label" aria-label="Введите свой электронный адрес для регистрации">
+          <input class="registration__form-input" type="text">
+        </label>
+        <button class="button-form registration__form-button" type="submit"></button>
+      </form>
+      <p>Остались вопросы?</p>
+      <p>Мы с радостью на них ответим</p>
+      <a class="button__phone registration__phone" href="tel:+78005558628">8 800 555-86-28</a>
+      <a class="button__mail registration__mail" href="mailto:mail@htmlacademy.ru">MAIL@HTMLACADEMY.RU</a>
+    </section>
+    <section class="map">
+      <div class="map__title-wrap">
+        <h2 class="map__title">УЛ. БОЛЬШАЯ КОНЮШЕННАЯ, 19/8</h2>
+        <button class="button_map map__button">Проложить маршрут</button>
+      </div>
+    </section>
+  </main>
+  <footer class="page__footer">
+    <h2 class="footer__title">Погнали?</h2>
+    <a class="button__facebook footer__facebook" href="fb.com" aria-label="facebook"></a>
+    <a class="button__vkontakte footer__vkontakte" href="vk.com" aria-label="vkontakte">vkontakte</a>
+    <a class="button__instagram footer__instagram" href="instagram.com" aria-label="instagram">instagram</a>
+    <div class="footer__divider"></div>
+    <span>Разработано</span>
+    <img class="footer__html-logo"src="" alt="">
+  </footer>
+</body>
+
 </html>
